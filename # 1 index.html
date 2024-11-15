@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>RGBA Design Enhancements</title>
+    <style>
+        /* Task 1: Apply RGBA Background Colors */
+        .background-fade {
+            background-color: rgba(0, 0, 255, 0.2); /* Light blue with 20% opacity */
+            padding: 50px;
+            border-radius: 8px;
+            text-align: center;
+            max-width: 600px;
+            margin: 50px auto;
+        }
+
+        /* Task 2: Enhance Text Visibility with RGBA */
+        .header-text {
+            color: white;
+            text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.3); /* Subtle black shadow with 30% opacity */
+            font-size: 2.5em;
+            margin: 0;
+        }
+
+        /* Task 3: Interactive Buttons with RGBA Hover Effects */
+        .interactive-button {
+            background-color: rgba(255, 0, 0, 0.8); /* Red with 80% opacity */
+            color: white;
+            border: none;
+            padding: 15px 30px;
+            font-size: 1em;
+            border-radius: 5px;
+            cursor: pointer;
+            transition: background-color 0.3s ease;
+            margin-top: 20px;
+        }
+
+        .interactive-button:hover {
+            background-color: rgba(255, 0, 0, 0.6); /* Slightly lighter red with 60% opacity */
+        }
+    </style>
+</head>
+<body>
+    <div class="background-fade">
+        <h1 class="header-text">Welcome to the Enhanced Webpage</h1>
+        <button class="interactive-button">Hover Me</button>
+    </div>
+</body>
+</html>
