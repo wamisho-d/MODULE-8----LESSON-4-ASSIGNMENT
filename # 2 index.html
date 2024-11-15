@@ -1,0 +1,86 @@
+# Creating Interactive Web Elements with CSS Animations and Transitions
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Interactive Webpage</title>
+  <style>
+    /* General Reset */
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+      font-family: Arial, sans-serif;
+    }
+
+    /* Task 1: Smooth Hover Transition for Links */
+    a {
+      color: #007acc;               /* Default link color */
+      text-decoration: none;         /* Remove underline */
+      transition: color 0.3s ease;   /* Smooth transition effect */
+    }
+
+    a:hover {
+      color: #ff6600;                /* Color on hover */
+    }
+
+    /* Task 2: Animated Button on Click */
+    .animated-button {
+      padding: 10px 20px;
+      font-size: 16px;
+      cursor: pointer;
+      background-color: #007acc;
+      color: #ffffff;
+      border: none;
+      border-radius: 5px;
+      transition: transform 0.1s ease;
+    }
+
+    .animated-button:active {
+      animation: click-grow 0.2s forwards;
+    }
+
+    @keyframes click-grow {
+      0% {
+        transform: scale(1);
+      }
+      50% {
+        transform: scale(1.1);    /* Slightly increase size */
+      }
+      100% {
+        transform: scale(1);      /* Return to normal size */
+      }
+    }
+
+    /* Task 3: Continuous Rotation Animation for an Icon */
+    .rotating-icon {
+      width: 50px;                 /* Adjust as needed */
+      height: 50px;                /* Adjust as needed */
+      animation: rotate 5s linear infinite;
+    }
+
+    @keyframes rotate {
+      from {
+        transform: rotate(0deg);
+      }
+      to {
+        transform: rotate(360deg);
+      }
+    }
+  </style>
+</head>
+<body>
+
+  <!-- Task 1: Links with Smooth Hover Transition -->
+  <p>Check out our <a href="#">latest offers</a> and <a href="#">news</a>.</p>
+
+  <!-- Task 2: Animated Button -->
+  <button class="animated-button">Click Me</button>
+
+  <!-- Task 3: Rotating Icon -->
+  <img src="icon.png" alt="Rotating Icon" class="rotating-icon">
+
+</body>
+</html>
